@@ -37,20 +37,21 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                 ),
               ),
-              Container(
-                color: Colors.white,
-                padding: EdgeInsets.all(10.0),
+              SizedBox(
+                height: 25.0,
+                width: 130.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
+                  child: ListTile(
+                    leading: Icon(
                       Icons.phone,
                       color: Colors.teal,
                     ),
-                    SizedBox(
-                      width: 50.0,
-                    ),
-                    Text(
+                    title: Text(
                       '+65 9782 3441',
                       style: TextStyle(
                         color: Colors.teal.shade900,
@@ -58,32 +59,24 @@ class MyApp extends StatelessWidget {
                         fontSize: 20.0,
                       ),
                     ),
-                  ],
-                ),
+                  ),
               ),
-              Container(
-                color: Colors.white,
-                padding: EdgeInsets.all(10.0),
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
+                  child: ListTile(
+                    leading: Icon(
                       Icons.email,
                       color: Colors.teal,
                     ),
-                    SizedBox(
-                      width: 30.0,
-                    ),
-                    Text(
+                    title: Text(
                       'jagateesvaran@gmail.com',
                       style: TextStyle(
                         color: Colors.teal.shade900,
                         fontFamily: 'SansPro',
-                        fontSize: 18.0,
+                        fontSize: 20.0,
                       ),
                     ),
-                  ],
-                ),
+                  ),
               ),
             ],
           ),
@@ -92,3 +85,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+
